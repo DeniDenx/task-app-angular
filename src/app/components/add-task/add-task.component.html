@@ -1,0 +1,16 @@
+<form *ngIf="showAddTaskDiv" class="add-form" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">Добавить задачу</label>
+    <input type="text" name="text" id="text" [(ngModel)]="text" placeholder="Название задачи">
+  </div>
+  <div class="form-control">
+    <label for="day">Время</label>
+    <input type="text" name="day" id="day" [(ngModel)]="day" placeholder="Время задачи">
+  </div>
+  <div class="form-control form-control-check">
+    <label for="reminder">Напомнить</label>
+    <input type="checkbox" name="reminder" id="reminder" [(ngModel)]="reminder" placeholder="Время задачи">
+  </div>
+  <input type="submit" value="Сохранить" class="btn btn-block">
+</form>
+
